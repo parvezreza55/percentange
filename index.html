@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo mfs</title>
+
+    <!-- daisyUi cdn  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.19/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main class="flex justify-center">
+      <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-3">
+            <!-- balance added start from here  -->
+            <div>
+              <div class="stats shadow">
+                <div class="stat">
+                  <p>% of profit</p>
+                  <div id="account-balance" class="stat-value">0</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+            <!-- balance added ends from here  -->
+            <!-- action btn added start from here  -->
+
+            <!-- action btn added Ends from here  -->
+
+            <!-- add money btn added from here -->
+            <div
+              id="add-money-form"
+              class="card form-bg bg-base-100 w-full max-w-sm shrink-0 shadow-2xl"
+            >
+              <form class="card-body">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Income Ammount</span>
+                  </label>
+                  <input id="input-add-money" type="text" placeholder="Ammount"
+                  class="input text-black font-bold placeholder:text-[#080808]
+                  input-bordered focus:outline-red-600 rounded-full bg-[#F4F5F7]
+                  required />
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Expanse Ammount</span>
+                  </label>
+                  <input
+                    id="input-pin"
+                    type="text"
+                    placeholder="Enter the Expanse"
+                    class="input text-black font-bold placeholder:text-[#080808] input-bordered focus:outline-red-600 rounded-full bg-[#F4F5F7]"
+                    required
+                  />
+                </div>
+                <div class="form-control mt-6">
+                  <button id="add-mone-btn" class="btn btn-primary">
+                    submit
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- add money btn added from here -->
+
+            <!-- cash out form start from here  -->
+
+            <!-- cash out form Ends from here  -->
+            <!-- transaction start from here  -->
+
+            <!-- transaction Ends from here  -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/addmoney.js"></script>
+    <script src="js/utilities.js"></script>
+    <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
+  </body>
+</html>
